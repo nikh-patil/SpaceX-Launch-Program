@@ -1,0 +1,114 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  background-color:#f1f1f1;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.app-title{
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.filter {
+  background-color:white;
+  float:left;
+  width:20%; /* The width is 25%, by default */
+  margin: 5px;
+  border-radius: 10px;
+  height: 650px;
+}
+
+.product {
+  background-color:#f1f1f1;
+  float:right;
+  width:75%; /* The width is 75%, by default */
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color:white;
+  min-width: 230px;
+  margin: 5px;
+}
+.card {
+  float: left;
+  width: calc(25% - 20px);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.img{
+  text-align: center;
+  background: #f1f1f1
+}
+.mission-name{
+  margin: 10px;
+    color: #23407b;
+}
+.head-key{
+  font-weight: bold; 
+}
+.head-value{
+  color: #23407b 
+}
+.wrap{
+  margin: 14px
+}
+ul{
+  margin: 5px;
+}
+.btn{
+  margin: 10px;
+  padding: 5px;
+  width:30%;
+  background: #5bf95b61;
+  border: 1px solid #5bf95b61;
+  transition: 0.2s all;
+}
+.btnClick{
+  margin: 10px;
+  padding: 5px;
+  width:30%;
+  background: #3db941;
+  border: 1px solid #3db941;
+  transition: 0.2s all;
+}
+.btn-wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.filterHeader{
+  text-align: center;
+}
+.filter-title{
+  font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 30px;
+}
+hr{
+  width: 60%;
+  text-align: center;
+}
+.spinner {
+  position: fixed;
+  z-index: 1031;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .filter, .product, .flex-container > div {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
